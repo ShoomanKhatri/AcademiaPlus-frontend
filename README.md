@@ -23,7 +23,7 @@
 
 - **Students**
 - **Teachers**
-- **Course Representatives (CRs)**
+- **Class Representatives (CRs)**
 - **Admins**
 
 ## 🏫 Faculties
@@ -31,3 +31,4 @@
 - BCA
 - CSIT
 - BIM
+- Can add/remove
