@@ -51,7 +51,7 @@ const Navbar = () => {
           <Link href="/">
             <div className="flex items-center gap-1">
               <div className="relative">
-                <span className="text-xl font-bold uppercase tracking-tight text-gray-100">
+                <span className="text-xl font-bold uppercase tracking-tight text-gray-100 ">
                   AcademiaPlus
                 </span>
               </div>
@@ -112,8 +112,8 @@ const Navbar = () => {
             </button>
           </Link>
           <Link href="/signup">
-            <button className="h-10 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 px-4 py-2 text-sm font-medium text-white transition-all border border-transparent hover:from-pink-600 hover:via-purple-600 hover:to-indigo-600 hover:bg-gradient-to-r   shadow-xl shadow-gray-500
-              hover:shadow-3xl hover:shadow-pink-300">
+            <button className="h-10 rounded-full bg-gradient-to-tl from-purple-500 via-purple-500 to-purple-600 px-4 py-2 text-sm font-medium text-white transition-all border border-transparent hover:from-purple-600 hover:via-purple-600 hover:to-purple-500 hover:bg-gradient-to-r   shadow-xl shadow-gray-500
+              hover:shadow-3xl hover:shadow-purple-300">
               Sign up 
             </button>
           </Link>
@@ -122,11 +122,11 @@ const Navbar = () => {
 
       {/* Mobile Nav items */}
       {isMenuOpen && (
-        <div className="md:hidden inset-0  flex flex-col items-start space-y-4 p-4  ">
+        <div className="md:hidden inset-0  flex flex-col  space-y-4 p-4  items-center backdrop-blur-sm">
           {navItems.map((d, i) => (
             <div key={i} className="w-full ">
               <div
-                className="flex justify-between items-center cursor-pointer py-3 "
+                className="flex justify-center items-center cursor-pointer py-3 "
                 onClick={() => toggleDropdown(i)}
               >
                 <Link 
@@ -157,12 +157,12 @@ const Navbar = () => {
           ))}
           <div className="flex flex-col items-center gap-4 w-full mt-6 ">
             <Link href="/login" onClick={closeMenu}>
-              <button className="w-60 h-10 rounded-md border border-blue-500 px-4 py-2 text-sm font-medium text-pink-500 transition-all hover:bg-pink-500 hover:text-white active:bg-pink-200">
+              <button className="w-60 h-10 rounded-md border border-blue-500 px-4 py-2 text-sm font-medium text-white transition-all bg-blue-600 hover:text-white active:bg-purple-200  bg-gradient-to-r from-blue-500 via-blue-500  to-blue-600 shadow-lg shadow-blue-400">
                 Sign in
               </button>
             </Link>
             <Link href="/signup" onClick={closeMenu}>
-              <button className="w-60 h-10 rounded-md bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-500 px-4 py-2 text-sm font-medium text-white transition-all border border-transparent hover:from-pink-600 hover:via-purple-600 hover:to-indigo-600 hover:bg-gradient-to-r">
+              <button className="w-60 h-10 rounded-md bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 px-4 py-2 text-sm font-medium text-white transition-all border border-transparent hover:from-purple-600 hover:via-purple-600 hover:to-purple-500 hover:bg-gradient-to-r shadow-lg shadow-purple-400">
                 Sign up
               </button>
             </Link>
